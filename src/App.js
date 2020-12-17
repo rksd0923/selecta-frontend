@@ -21,17 +21,17 @@ function App() {
       method: 'GET',
       headers: {
         'Content-type': 'application/json',
-        'Authorization': `Token ${token['selecta-token']}`
+        //'Authorization': `Token ${token['selecta-token']}`
       }
     }).then(res => res.json())
       .then(res => setPlayers(res))
       .catch(error => console.log(error))
   }, [])
 
-  useEffect(() => {
-    console.log(token);
-    if (!token['selecta-token']) window.location.href = '/login';
-  })
+  //useEffect(() => {
+  // console.log(token);
+  //if (!token['selecta-token']) window.location.href = '/login';
+  //})
 
   //const playerClicked = player => {
   //  setSelectedPlayer(player);
