@@ -9,7 +9,7 @@ const Image = () => {
 
             <div
                 style={{
-                    backgroundImage: `url("https://i.imgur.com/znlEGXU.jpg")`, position: 'fixed', minWidth: '100%', minHeight: '100%', backgroundSize: 'cover', backgroundPosition: 'center'
+                    backgroundImage: `url("https://i.imgur.com/RQvOAb5.jpg")`, position: 'fixed', minWidth: '100%', minHeight: '100%', backgroundSize: 'cover', backgroundPosition: 'center'
                 }}>
                 Nice Snippets
         </div>
