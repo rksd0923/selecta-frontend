@@ -9,7 +9,7 @@ const Facebook = () => {
         <ReactBootstrap.Container fluid>
             <ReactBootstrap.Row>
                 <ReactBootstrap.Col>
-                    <div className="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="50%" data-numposts="5" data-mobile="Auto-detected"></div>
+                    <div className="fb-comments" data-href="https://selectaxsiempre.net/" data-width="50%" data-numposts="5" data-mobile="Auto-detected"></div>
 
 
                 </ReactBootstrap.Col>
