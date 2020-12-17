@@ -28,10 +28,10 @@ function App() {
       .catch(error => console.log(error))
   }, [])
 
-  //useEffect(() => {
-  // console.log(token);
-  //if (!token['selecta-token']) window.location.href = '/login';
-  //})
+  useEffect(() => {
+    console.log(token);
+    if (!token['selecta-token']) window.location.href = '/login';
+  })
 
   //const playerClicked = player => {
   //  setSelectedPlayer(player);
