@@ -21,7 +21,7 @@ function App() {
       method: 'GET',
       headers: {
         'Content-type': 'application/json',
-        //'Authorization': `Token ${token['selecta-token']}`
+        'Authorization': `Token ${token['selecta-token']}`
       }
     }).then(res => res.json())
       .then(res => setPlayers(res))
