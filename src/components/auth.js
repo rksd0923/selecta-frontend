@@ -34,30 +34,31 @@ function Auth() {
         <div className="App">
 
             <header className="App-header">
-                {isLoggedIn ? <h1>Login</h1>
-                    : <h1>Register</h1>}
+                <h1>Por Favor Registrese o Entre en Sesion</h1>
+                {isLoggedIn ? <h1>Entre en Sesion</h1>
+                    : <h1>Registracion</h1>}
             </header>
             <div className="login">
 
                 <form>
                     {isLoggedIn ?
                         <div>
-                            <label htmlFor="username">Username</label><br />
-                            <input id="name" type="text" placeholder="username" value={username}
+                            <label htmlFor="username">Nombre de Usuario</label><br />
+                            <input id="name" type="text" placeholder="Nombre de Usuario" value={username}
                                 onChange={evt => setUsername(evt.target.value)} /><br />
-                            <label htmlFor="password">Password</label><br />
-                            <input id="password" type="password" placeholder="password" value={password}
+                            <label htmlFor="password">Contraseña</label><br />
+                            <input id="password" type="password" placeholder="Contraseña" value={password}
                                 onChange={evt => setPassword(evt.target.value)} /><br />
                         </div> :
 
-                        <div><label htmlFor="username">Username</label><br />
-                            <input id="name" type="text" placeholder="username" value={username}
+                        <div><label htmlFor="username">Nombre de Usuario</label><br />
+                            <input id="name" type="text" placeholder="Nombre de Usuario" value={username}
                                 onChange={evt => setUsername(evt.target.value)} /><br />
-                            <label htmlFor="email">Email</label><br />
-                            <input id="email" type="email" placeholder="email" value={email}
+                            <label htmlFor="email">Correo Electronico</label><br />
+                            <input id="email" type="email" placeholder="Correo Electronico" value={email}
                                 onChange={evt => setEmail(evt.target.value)} /><br />
-                            <label htmlFor="password">Password</label><br />
-                            <input id="password" type="password" placeholder="password" value={password}
+                            <label htmlFor="password">Contraseña</label><br />
+                            <input id="password" type="password" placeholder="Contraseña" value={password}
                                 onChange={evt => setPassword(evt.target.value)} /><br />
                         </div>
                     }
@@ -67,15 +68,15 @@ function Auth() {
 
                 {
                     isLoggedIn ?
-                        <button onClick={loginClicked} disabled={isDisabled}>Login</button> :
-                        <button onClick={registerClicked} disabled={isDisabled}>Register</button>
+                        <button onClick={loginClicked} disabled={isDisabled}>Entre en Sesion</button> :
+                        <button onClick={registerClicked} disabled={isDisabled}>Registrese</button>
                 }
 
                 {
                     isLoggedIn ?
 
-                        <p onClick={() => setIsLoggedIn(false)}>You don't have an account.  Register here</p> :
-                        <p onClick={() => setIsLoggedIn(true)}>You have an account.  Login here</p>
+                        <p onClick={() => setIsLoggedIn(false)}>Si no tiene cuenta por favor.  REGISTRESE AQUI</p> :
+                        <p onClick={() => setIsLoggedIn(true)}>Si tiene cuenta.  ENTRE AQUI</p>
                 }
 
             </div>

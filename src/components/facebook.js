@@ -6,16 +6,11 @@ import './facebook.css';
 const Facebook = () => {
     return (
 
-        <ReactBootstrap.Container fluid>
-            <ReactBootstrap.Row>
-                <ReactBootstrap.Col>
-                    <div className="fb-comments" data-href="https://selectaxsiempre.net/" data-width="50%" data-numposts="5" data-mobile="Auto-detected"></div>
+
+        <div className="fb-comments" data-href="https://selectaxsiempre.net/" data-colorscheme="light" data-width="350" data-numposts="5" data-mobile="Auto-detected"></div>
 
 
-                </ReactBootstrap.Col>
 
-            </ReactBootstrap.Row>
-        </ReactBootstrap.Container>
 
 
     )

@@ -46,7 +46,7 @@ function PlayerDetails(props) {
 
             { players ? (
                 <div>
-                    <img src={props.player.photo_url} alt="" width='400' height='300' />
+                    <img src={props.player.photo_url} alt="" width='150' height='100' />
                     <h1>{players.name}</h1>
                     <FontAwesomeIcon icon={faStar} className={players.avg_rating > 0 ? 'yellow' : ''} />
                     <FontAwesomeIcon icon={faStar} className={players.avg_rating > 1 ? 'yellow' : ''} />

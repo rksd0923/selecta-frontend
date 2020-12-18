@@ -7,12 +7,12 @@ const Image = () => {
 
         < div >
 
-            <div
+            <div className="site-name"
                 style={{
-                    backgroundImage: `url("https://i.imgur.com/RQvOAb5.jpg")`, position: 'fixed', minWidth: '100%', minHeight: '100%', backgroundSize: 'cover', backgroundPosition: 'center'
+                    backgroundImage: `url("https://i.imgur.com/BUc8qrr.jpg")`, position: 'fixed', minWidth: '100%', minHeight: '100%', backgroundSize: 'cover', backgroundPosition: 'center'
                 }}>
-                Nice Snippets
-        </div>
+                <h1 className="selecta">Selecta por Siempre</h1>
+            </div>
 
         </div >
 

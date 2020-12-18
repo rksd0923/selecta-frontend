@@ -81,7 +81,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Selecta</h1>
-        <h1 className="logOut" onClick={logoutUser}>Cerrar Sesion</h1>
+        <p className="logOut" onClick={logoutUser}>Cerrar Sesion</p>
 
       </header>
       <div className="layout">
@@ -110,6 +110,8 @@ function App() {
       <Facebook />
 
     </div>
+
+
 
 
   );

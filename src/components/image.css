@@ -1,0 +1,12 @@
+.site-name{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    
+}
+
+.site-name .selecta{
+    margin-top: 280px;
+    font-weight: bold;
+    font-size: 45px;
+}

@@ -1,14 +1,18 @@
 .App {
   padding: 20px;
   min-height: 100vh;
-  background-color: #072666;
+  background-image: url('https://i.imgur.com/FLLKefB.jpg');
+  background-image: no-repeat;
+  background-size: cover;
   color: white;
+  
   
 }
 
 .App-header {
   text-align: center;
   font-size: calc(10px + 2vmin);
+  margin-top: 25px;
   
 }
 
@@ -61,7 +65,7 @@ button:disabled {
 }
 
 .rate-container .fa-star {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   cursor: pointer;
 }
 
@@ -71,8 +75,9 @@ button:disabled {
 }
 
 .player-item svg {
-  font-size: 1.2rem;
-  margin: 16px 5px;
+  font-size: 1.0rem;
+  margin: 15px 5px;
+  
 }
 
 .logOut {
@@ -80,7 +85,28 @@ button:disabled {
   top: 20px;
   right: 20px;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.App .fb-comments{
+  background-color: white;
+  color: white;
+}
+
+.button-name{
+  font-size: 1.2rem;
+  width: 176px;
+  cursor: pointer;
+  border-radius: 12px;
+  background-color: transparent;
+  color: white;
+  border: none;
+
+}
+
+.button-name:hover{
+  background-color: blue;
+  color: white;
 }
 
 

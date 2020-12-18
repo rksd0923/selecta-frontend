@@ -1,4 +1,5 @@
 import React from 'react'
+import './Navbar.css';
 import * as ReactBootstrap from 'react-bootstrap'
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 
@@ -12,7 +13,7 @@ const Navbar = () => {
             <ReactBootstrap.Navbar.Collapse id="basic-navbar-nav">
                 <ReactBootstrap.Nav className="mr-auto">
                     <Link to="/players">
-                        <ReactBootstrap.Nav.Link href="#Jugadores">Jugadores</ReactBootstrap.Nav.Link>
+                        <ReactBootstrap.Nav.Link href="#Jugadores">Equipo</ReactBootstrap.Nav.Link>
                     </Link>
                     <ReactBootstrap.Nav.Link href="#link">Entrenador</ReactBootstrap.Nav.Link>
 

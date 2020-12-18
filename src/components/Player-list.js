@@ -2,6 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEdit } from '@fortawesome/free-solid-svg-icons'
 import { faTrash } from '@fortawesome/free-solid-svg-icons'
+import './Player-list.css';
 import { API } from '../api'
 import { useCookies } from 'react-cookie';
 
@@ -31,7 +32,7 @@ function PlayerList(props) {
             {props.players && props.players.map(player => {
                 return (
                     <div key={player.id} className="player-item">
-                        <h2 onClick={playerClicked(player)}>{player.name}</h2>
+                        <button className="button-name" onClick={playerClicked(player)}>{player.name}</button>
                         <FontAwesomeIcon icon={faEdit} onClick={() => editClicked(player)} />
                         <FontAwesomeIcon icon={faTrash} onClick={() => removeClicked(player)} />
                     </div>
