@@ -80,6 +80,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1 className="instructions">Elije al Jugador y hazle Click</h1>
+        <h1 className="mas-instrauctions">Añade tu Voto y Comentario</h1>
         <h1>Selecta</h1>
         <p className="logOut" onClick={logoutUser}>Cerrar Sesion</p>
 

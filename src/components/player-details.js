@@ -15,7 +15,7 @@ function PlayerDetails(props) {
     }
 
     const rateClicked = rate => evt => {
-        fetch(`https://selecta-project.herokuapp.com//selecta/Players/${players.id}/rate_player/`, {
+        fetch(`https://selecta-project.herokuapp.com/selecta/Players/${players.id}/rate_player/`, {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json',
@@ -29,7 +29,7 @@ function PlayerDetails(props) {
     }
 
     const getDetails = () => {
-        fetch(`https://selecta-project.herokuapp.com//selecta/Players/${players.id}/`, {
+        fetch(`https://selecta-project.herokuapp.com/selecta/Players/${players.id}/`, {
             method: 'GET',
             headers: {
                 'Content-type': 'application/json',
