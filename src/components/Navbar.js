@@ -8,11 +8,13 @@ const Navbar = () => {
 
 
         <ReactBootstrap.Navbar bg="secondary" variant="dark" expand="lg">
-            <ReactBootstrap.Navbar.Brand className="navbar" href="#home">Selecta por Siempre</ReactBootstrap.Navbar.Brand>
+            <Link to="/" style={{ textDecoration: 'none' }}>
+                <ReactBootstrap.Navbar.Brand className="navbar" href="#home">Selecta por Siempre</ReactBootstrap.Navbar.Brand>
+            </Link>
             <ReactBootstrap.Navbar.Toggle aria-controls="basic-navbar-nav" />
             <ReactBootstrap.Navbar.Collapse id="basic-navbar-nav">
                 <ReactBootstrap.Nav className="mr-auto">
-                    <Link to="/players">
+                    <Link to="/players" style={{ textDecoration: 'none' }}>
                         <ReactBootstrap.Nav.Link href="#Equipo">Equipo</ReactBootstrap.Nav.Link>
                     </Link>
 

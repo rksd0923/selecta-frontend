@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { API } from '../api'
 import { useCookies } from 'react-cookie';
+import Navbar from './Navbar'
+import './auth.css'
 
 function Auth() {
 
@@ -32,6 +34,8 @@ function Auth() {
 
     return (
         <div className="App">
+
+            <Navbar />
 
             <header className="App-header">
                 <h1>Por Favor Registrese o Entre en Sesion</h1>
@@ -75,8 +79,8 @@ function Auth() {
                 {
                     isLoggedIn ?
 
-                        <p onClick={() => setIsLoggedIn(false)}>Si no tiene cuenta por favor.  REGISTRESE AQUI</p> :
-                        <p onClick={() => setIsLoggedIn(true)}>Si tiene cuenta.  ENTRE AQUI</p>
+                        <p className="register" onClick={() => setIsLoggedIn(false)}>Si no tiene cuenta por favor.  REGISTRESE AQUI</p> :
+                        <p className="login" onClick={() => setIsLoggedIn(true)}>Si tiene cuenta.  ENTRE AQUI</p>
                 }
 
             </div>

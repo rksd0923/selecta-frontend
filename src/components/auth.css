@@ -1,0 +1,17 @@
+.register{
+    cursor:pointer;
+}
+
+.register:hover{
+    color: #9CDCFE;
+    font-weight: bold;
+}
+
+.login{
+    cursor:pointer;
+}
+
+.login:hover{
+    color: #9CDCFE;
+    font-weight: bold;
+}
