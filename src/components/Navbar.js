@@ -7,7 +7,7 @@ const Navbar = () => {
     return (
 
 
-        <ReactBootstrap.Navbar bg="secondary" variant="dark" expand="lg">
+        <ReactBootstrap.Navbar bg="transparent" variant="dark" expand="lg">
             <Link to="/" style={{ textDecoration: 'none' }}>
                 <ReactBootstrap.Navbar.Brand className="navbar" href="#home">Selecta por Siempre</ReactBootstrap.Navbar.Brand>
             </Link>

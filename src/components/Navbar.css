@@ -1,10 +1,12 @@
 .mr-auto{
     font-size: 20px;
+    font-weight: bold;
+    color: white;
     
    
 }
 
-a.navbar .navbar-brand{
+.navbar .navbar-brand{
     font-weight: bold;
     color: white;
     

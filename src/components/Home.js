@@ -7,8 +7,9 @@ import * as ReactBootstrap from 'react-bootstrap';
 function Home() {
     return (
         <div>
-            <Navbar />
             <Image />
+            <Navbar />
+
 
 
         </div>
