@@ -36,12 +36,12 @@ export class API {
         }).then(res => res.json())
 
     }
-    static createPlayer(body) {
+    static createPlayer(body, token) {
         return fetch(`https://selecta-project.herokuapp.com/selecta/Players/`, {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json',
-                //'Authorization': `Token ${token}`
+                'Authorization': `Token ${token}`
             },
             body: JSON.stringify(body)
         }).then(res => res.json())
