@@ -13,10 +13,10 @@ function Auth() {
 
     const [token, setToken] = useCookies(['selecta-token']);
 
-    useEffect(() => {
+    /*useEffect(() => {
         console.log(token);
         if (token['selecta-token']) window.location.href = '/players';
-    }, [token])
+    }, [token])*/
 
     const loginClicked = () => {
         API.loginUser({ username, password })
