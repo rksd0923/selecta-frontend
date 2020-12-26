@@ -41,7 +41,7 @@ export class API {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json',
-                //'Authorization': `Token ${token}`
+                'Authorization': `Token ${token}`
             },
             body: JSON.stringify(body)
         }).then(res => res.json())
