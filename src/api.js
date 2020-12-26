@@ -36,7 +36,7 @@ export class API {
         }).then(res => res.json())
 
     }
-    static createPlayer(body) {
+    static createPlayer(body, token) {
         return fetch(`https://selecta-project.herokuapp.com/selecta/Players/`, {
             method: 'POST',
             headers: {
